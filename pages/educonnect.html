@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/educonnect.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        function openSignupPage() {
+          window.open('signup-form.html', 'Signup', 'width=600,height=800');
+        }
+      </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/educonnect-logo.png" alt="EduConnect Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Connecting minds, empowering futures</h2>
+                <p>Join EduConnect and unlock a world of limitless learning possibilities</p>
+                <a href="#" class="cta-button" onclick="openSignupPage()">Sign Up To Our Newsletter</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>EduConnect is an innovative educational platform that revolutionizes the way students learn and
+                    connect with their peers, educators, and resources. We provide a comprehensive suite of tools and
+                    services to create a seamless learning experience for students of all ages.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h3>Our Services</h3>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="service-card">
+                            <img src="../assets/virtual-classroom.jpg" alt="Virtual Classrooms">
+                            <h4>Virtual Classrooms</h4>
+                            <p>Experience interactive virtual classrooms with real-time communication, screen sharing,
+                                and
+                                interactive whiteboards.</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="../assets/personalized-learning.jpg" alt="Personalized Learning">
+                            <h4>Personalized Learning</h4>
+                            <p>Access adaptive learning paths, interactive quizzes, and progress tracking to enhance
+                                your skills
+                                at your own pace.</p>
+                        </div>
+                        <div class="service-card">
+                            <img src="../assets/tutoring.jpg" alt="Tutoring Services">
+                            <h4>Tutoring Services</h4>
+                            <p>Connect with qualified tutors for one-on-one sessions, homework help, exam preparation,
+                                and
+                                concept reinforcement.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="resources">
+            <div class="container">
+                <h3>Resources</h3>
+                <p>Explore our extensive library of e-books, study guides, videos, and interactive simulations covering
+                    various subjects and grade levels.</p>
+                <a href="#" class="cta-button">Explore Resources</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h3>Contact Us</h3>
+                <p>Have a question or need assistance? We're here to help. Contact our support team for prompt
+                    assistance.</p>
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 EduConnect. All rights reserved.</p>
+                <ul class="footer-menu">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

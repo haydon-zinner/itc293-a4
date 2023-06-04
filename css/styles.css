@@ -1,0 +1,426 @@
+/* Normalize and Import fonts */
+@import url("./normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@300&family=Roboto:wght@100;400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
+/* Define colors */
+:root {
+  --lightgrey: #d9d9d9;
+  --darkgrey: #474747ff;
+  --black: #0f0f0f;
+  --white: #f9f8f8ff;
+  --red: #ad343eff;
+  --yellow: #f2af29ff;
+  --blue: #3e92ccff;
+  --green: #0d270e;
+  font-family: "Roboto", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/*--------------------Defaults------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* Define font theme */
+h1 {
+  /* Fancy Display font only */
+  font-family: "Neuton", serif;
+  font-size: 4rem;
+}
+h2 {
+  font-family: "Neuton", serif;
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Neuton", serif;
+  font-size: 2.5rem;
+}
+h4 {
+  font-family: "Neuton", serif;
+  font-size: 2rem;
+}
+h5 {
+  font-family: "Neuton", serif;
+  font-size: 1.5rem;
+}
+h6 {
+  font-family: "Neuton", serif;
+  font-size: 1.25rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--darkgrey);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  /* Chrome*/
+  display: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/*----------Utility Classes----------------*/
+.flex {
+  display: flex;
+}
+.content_wrap {
+  max-width: 60%;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px 2px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background: var(--white);
+}
+.red {
+  color: var(--red);
+}
+.black {
+  color: var(--black);
+}
+.text-centered {
+  text-align: center;
+}
+.fullscreen {
+  min-height: 90vh;
+  border: 1px solid rgba(212, 12, 12, 0); /*This is here to stop a glitch*/
+}
+.additional_content {
+  display: none; /* Hide the additional_content div by default */
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+/* ----------------Navbar Styles------------------- */
+.navbar_container {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--white);
+}
+.navbar_left_container {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: var(--darkgrey);
+}
+.navbar_center_container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.navbar_right_container {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 20px;
+}
+.navbar_right_container a {
+  font-size: 26px;
+  margin: 0 10px;
+  color: var(--darkgrey);
+  transition: 0.3s;
+}
+.navbar_right_container a:hover {
+  transform: scale(1.3);
+  color: var(--red);
+}
+.button {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: var(--darkgrey);
+  color: white;
+  border: 2px solid var(--darkgrey);
+  padding: 15px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  margin: 3px 8px !important;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.home_link,
+.home_link:visited {
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+.resume-cta {
+  display: flex;
+  flex-direction: column;
+}
+.web-skills p,
+.resume-cta p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.web-skills-cta {
+  display: flex;
+}
+/*---------------------------------------------- */
+
+/*------------------- Home Page-----------------*/
+#landing_page {
+  background-image: url("../assets/hero-background-4.jpg");
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_content {
+  color: var(--white);
+  text-align: right;
+  padding-right: 60px;
+}
+.home_content h1,
+.home_content h2,
+.home_content p {
+  margin: 80px;
+}
+
+/*---------------------------------------------- */
+
+/*------------------- Resume Page-----------------*/
+/* Resume Contents*/
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 10px;
+}
+.item-details {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Education
+  -------------------------------*/
+.education ol {
+  list-style: upper-roman;
+  margin: 20px;
+  padding: 8px;
+}
+.education p + h3 {
+  text-align: left;
+  padding-bottom: 0;
+}
+.sub-results {
+  width: 80%;
+  border: 1px solid var(--white);
+}
+.sub-results th {
+  color: var(--white);
+  background-color: var(--darkgrey);
+}
+.sub-results tr {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sub-results tr:nth-of-type(even) {
+  background: var(--lightgrey);
+}
+
+/* Skills Certificates
+  -------------------------------*/
+.certificates ul,
+.work-experience ul {
+  list-style: square;
+  margin: 0;
+}
+.certs ul {
+  list-style: none;
+  margin: 8px;
+  padding: 8px;
+}
+#csu-logo {
+  width: 150px;
+  display: inline-block;
+}
+/*------------------------------- */
+
+/*---------------------------------------------- */
+
+#my-logo {
+  height: 60px;
+}
+
+/*-------------------Copyright-----------------*/
+
+.copyright {
+  text-align: center;
+}
+
+.copyright::after {
+  content: "Copyright \00a9 2023 Haydon Zinner. All rights reserved.";
+  padding-bottom: 10px;
+}
+/*---------------------------------------------- */
+
+/* Media Queries*/
+@media print {
+  /* Adjust page size and margins for A4 paper */
+
+  body {
+    background-color: white;
+  }
+
+  .content_wrap {
+    box-shadow: none;
+    max-width: 100%;
+    width: 100%;
+    align-items: start;
+  }
+
+  /* Adjust font sizes for printing */
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .navbar_container,
+  footer {
+    visibility: hidden;
+  }
+
+  /* Remove background image */
+  #landing_page {
+    background-image: none;
+  }
+
+  /* Change text color to black */
+  .home_content {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    max-width: 90%;
+    text-align: left;
+  }
+
+  /* Remove padding and margins */
+  .home_content h1,
+  .home_content h2,
+  .home_content p {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .additional_content {
+    display: block; /* Show the additional_content div on larger screens */
+  }
+
+  /* Adjust styles for better printing */
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .content_wrap {
+    max-width: 100%;
+    width: auto;
+    margin-left: 30mm;
+    margin-right: 30mm;
+  }
+  .work-experience {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .work-experience::before {
+    content: "";
+    display: block;
+    page-break-before: always;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm 20mm 20mm 30mm;
+  }
+}
