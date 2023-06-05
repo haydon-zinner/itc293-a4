@@ -283,6 +283,14 @@ a:visited {
 }
 /*---------------------------------------------- */
 
+iframe {
+  position: absolute;
+  top: 60;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Media Queries*/
 @media print {
   /* Adjust page size and margins for A4 paper */
